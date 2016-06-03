@@ -1,4 +1,4 @@
-app.controller('HeroEntryController', ['$scope', '$http', function ($scope, $http) {
+myApp.controller('HeroEntryController', ['$scope', '$http', function ($scope, $http) {
   $scope.superPowers = {};
   $scope.currentHero = {};
 
@@ -16,6 +16,12 @@ app.controller('HeroEntryController', ['$scope', '$http', function ($scope, $htt
     $http.get('/superPowerRoute').then(function (response) {
       $scope.superPowers = response.data;
     });
+  }
+
+  function getHeroes () {
+      $http.get('/heroRoute').then(function (response) {
+        $scope.heroes = response.data;
+      });
   }
 
 }]);

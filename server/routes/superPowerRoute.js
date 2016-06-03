@@ -4,13 +4,13 @@ var mongoose = require('mongoose');
 var SuperPower = require('../models/superPowerSchema');
 
 router.get('/', function (req, res) {
-  SuperPower.find({}, function (err, favorites) {
+  SuperPower.find({}, function (err, superPower) {
     if (err) {
       res.sendStatus(500);
       return;
     }
 
-    res.send(superPowers);
+    res.send(superPower);
   });
 });
 

@@ -13,10 +13,10 @@
           <label for="city">City:</label>
           <input type="text" id="currentCity" name="city" ng-model="currentHero.city" />
 
-          <select ng-model="power_name"
-          ng-options="superPower.power_name for superPower in superPowers">
+          <select ng-model="currentHero.power_name"
+          ng-options="superPower.power_name for superPower in superPowers"></select>
 
           <button ng-click="submitHero()">Save Hero</button>
-          
+
         </form>
       </div>
