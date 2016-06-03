@@ -1,0 +1,21 @@
+{
+  "name": "assessment-3-angular-mongo",
+  "version": "1.0.0",
+  "description": "Assessment for Prime Digital Academy",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "author": "Pat Kahnke",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.6",
+    "angular-route": "^1.5.6",
+    "body-parser": "^1.15.1",
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.19",
+    "path": "^0.12.7"
+  }
+}

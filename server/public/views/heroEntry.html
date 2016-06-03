@@ -1,0 +1,22 @@
+    <div class="container col-md-8" id="heroCreation">
+        <h1>Create a Hero</h1>
+        <form id="hero-form">
+          <label for="alias">Alias:</label>
+          <input type="text" id="currentAlias" name="alias" ng-model="currentHero.alias" />
+
+          <label for="first_name">First Name:</label>
+          <input type="text" id="currentFirstName" name="first-name" ng-model="currentHero.first_name" />
+
+          <label for="last_name">Last Name:</label>
+          <input type="text" id="currentLastName" name="last-name" ng-model="currentHero.last_name" />
+
+          <label for="city">City:</label>
+          <input type="text" id="currentCity" name="city" ng-model="currentHero.city" />
+
+          <select ng-model="power_name"
+          ng-options="superPower.power_name for superPower in superPowers">
+
+          <button ng-click="submitHero()">Save Hero</button>
+          
+        </form>
+      </div>

@@ -1,0 +1,27 @@
+<div class="container col-md-8" id="hero-display">
+<table class="table table-striped table-bordered">
+  <h1>See Your Heroes</h1>
+  <select ng-model="power_name"
+  ng-options="superPower.power_name for superPower in superPowers">
+  <thead>
+    <tr>
+      <th>Alias</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>City</th>
+      <th>Powers</th>
+      <th>Delete Hero</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="hero in heroes">
+      <td>{{hero.alias}}</td>
+      <td>{{hero.first_name}}</td>
+      <td>{{hero.last_name}}</td>
+      <td>{{hero.city}}</td>
+      <td>{{hero.power_name}}</td>
+      <td><button ng-click="deleteHero()">Delete</button>
+    </tr>
+  </tbody>
+</table>
+</div>
